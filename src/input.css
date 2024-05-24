@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  @apply w-[100%] h-auto;
+}
+
+p {
+  @apply text-Dark_grayish_blue font-medium;
+}
+
+.unread > span {
+  @apply after:content-[''] after:h-2 after:w-2 after:bg-primaryRed after:inline-block after:rounded after:ml-1;
+}
+
+.unread {
+  @apply bg-Light_grayish_blue_1;
+}
+
+.notification__mesage {
+  @apply flex flex-col
+        min-w-[18rem] rounded-lg
+       sm:w-full ;
+       
+}
+
+.userDiv {
+  @apply grid  p-3  text-xs 
+        sm:text-xl;
+}
+
+.chess{
+  @apply text-primaryBlue font-bold;
+}
